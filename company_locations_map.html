@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0b26b39ff7096e4c5d1c4849c6f9cb50 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0b26b39ff7096e4c5d1c4849c6f9cb50" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0b26b39ff7096e4c5d1c4849c6f9cb50 = L.map(
+                "map_0b26b39ff7096e4c5d1c4849c6f9cb50",
+                {
+                    center: [50.0, 10.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": true,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_89bfa7ba9729a207b397805be2fd5946 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_89bfa7ba9729a207b397805be2fd5946.addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+            var marker_c6e60bb8e5695f63c87eed878e45f79a = L.marker(
+                [48.2082, 16.3738],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+        var icon_902259edce5557c4215551da5d7284c2 = L.icon({
+  "iconUrl": "https://i.imgur.com/AEzi4kI.png",
+  "iconSize": [40, 40],
+});
+        
+    
+                marker_c6e60bb8e5695f63c87eed878e45f79a.setIcon(icon_902259edce5557c4215551da5d7284c2);
+            
+    
+            var marker_afb5e18111787fc835fcf68a683a2e71 = L.marker(
+                [47.8095, 13.055],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+        var icon_a047244f7822f67ea59a4bcb92b3f9be = L.icon({
+  "iconUrl": "https://i.imgur.com/JAfEf9l.png",
+  "iconSize": [40, 40],
+});
+        
+    
+                marker_afb5e18111787fc835fcf68a683a2e71.setIcon(icon_a047244f7822f67ea59a4bcb92b3f9be);
+            
+    
+            var marker_7469a8f03fdaefee6ab30b4e0fa1a17f = L.marker(
+                [47.5162, 14.5501],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+        var icon_6307ac5bc4846e612cb0b27cacbc5d3d = L.icon({
+  "iconUrl": "https://i.imgur.com/gM6ha5F.png",
+  "iconSize": [40, 40],
+});
+        
+    
+                marker_7469a8f03fdaefee6ab30b4e0fa1a17f.setIcon(icon_6307ac5bc4846e612cb0b27cacbc5d3d);
+            
+    
+            var marker_0053768fe6eae488df1690b84a0f49bd = L.marker(
+                [47.0707, 15.4395],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+        var icon_faf284ab9097f01fdabc0df20258746e = L.icon({
+  "iconUrl": "https://i.imgur.com/PDplDJr.png",
+  "iconSize": [40, 40],
+});
+        
+    
+                marker_0053768fe6eae488df1690b84a0f49bd.setIcon(icon_faf284ab9097f01fdabc0df20258746e);
+            
+    
+            var marker_8ed1e58af305ba922d91a1c863a52241 = L.marker(
+                [52.5, -1.5],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+                marker_8ed1e58af305ba922d91a1c863a52241.setIcon(icon_902259edce5557c4215551da5d7284c2);
+            
+    
+            var marker_45aa479bbb7f0f215fd6fe60808a5fe1 = L.marker(
+                [51.5074, -0.1278],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+        var icon_13179cf79e2712c1f8f0c2a26740f107 = L.icon({
+  "iconUrl": "https://i.imgur.com/K7JiAaC.png",
+  "iconSize": [40, 40],
+});
+        
+    
+                marker_45aa479bbb7f0f215fd6fe60808a5fe1.setIcon(icon_13179cf79e2712c1f8f0c2a26740f107);
+            
+    
+            var marker_6de49931c3d2fc9f4a03578e245ab129 = L.marker(
+                [53.4808, -2.2426],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+        var icon_6df02524221fb0e41779d5ba691b4237 = L.icon({
+  "iconUrl": "https://i.imgur.com/UmwcsuN.png",
+  "iconSize": [40, 40],
+});
+        
+    
+                marker_6de49931c3d2fc9f4a03578e245ab129.setIcon(icon_6df02524221fb0e41779d5ba691b4237);
+            
+    
+            var marker_24ddf49a362dacdcb8138edfda62a2cc = L.marker(
+                [52.52, 13.405],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+                marker_24ddf49a362dacdcb8138edfda62a2cc.setIcon(icon_a047244f7822f67ea59a4bcb92b3f9be);
+            
+    
+            var marker_3dbe77202b79b5bc5b6c2a81d2982760 = L.marker(
+                [51.1657, 10.4515],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+                marker_3dbe77202b79b5bc5b6c2a81d2982760.setIcon(icon_faf284ab9097f01fdabc0df20258746e);
+            
+    
+            var marker_1b544d2ad821ed7253107fbf39fa31be = L.marker(
+                [50.1109, 8.6821],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+                marker_1b544d2ad821ed7253107fbf39fa31be.setIcon(icon_13179cf79e2712c1f8f0c2a26740f107);
+            
+    
+            var marker_8899386a80419c30f7e19f7118973d38 = L.marker(
+                [48.1351, 11.582],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+                marker_8899386a80419c30f7e19f7118973d38.setIcon(icon_6df02524221fb0e41779d5ba691b4237);
+            
+    
+            var marker_3074c9d848dcb87f732dcb921e911cca = L.marker(
+                [46.2276, 2.2137],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+        var icon_00d5155b1a1b638b530bba195f115093 = L.icon({
+  "iconUrl": "https://i.imgur.com/vXxJMWE.png",
+  "iconSize": [40, 40],
+});
+        
+    
+                marker_3074c9d848dcb87f732dcb921e911cca.setIcon(icon_00d5155b1a1b638b530bba195f115093);
+            
+    
+            var marker_0a05f5f7f6df82a60cb380e780f11967 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+        var icon_f7dfbd4fe8bf7a73850af50a67435bad = L.icon({
+  "iconUrl": "https://i.imgur.com/6IRKNeS.png",
+  "iconSize": [40, 40],
+});
+        
+    
+                marker_0a05f5f7f6df82a60cb380e780f11967.setIcon(icon_f7dfbd4fe8bf7a73850af50a67435bad);
+            
+    
+            var marker_203b1cd2feec47ab93120cf1c79dcdf8 = L.marker(
+                [40.4637, -3.7492],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+                marker_203b1cd2feec47ab93120cf1c79dcdf8.setIcon(icon_00d5155b1a1b638b530bba195f115093);
+            
+    
+            var marker_d75a4588ba3ad65beb4619e43261e80f = L.marker(
+                [41.3851, 2.1734],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+        var icon_4618a25245be43a8c70b86634277ea69 = L.icon({
+  "iconUrl": "https://i.imgur.com/QXIY7kP.png",
+  "iconSize": [40, 40],
+});
+        
+    
+                marker_d75a4588ba3ad65beb4619e43261e80f.setIcon(icon_4618a25245be43a8c70b86634277ea69);
+            
+    
+            var marker_76c6640fc5d584a4bd4b6f2bc8da0449 = L.marker(
+                [39.4699, -0.3763],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+        var icon_bf781f874d6ed6d09c9cd26b91026acc = L.icon({
+  "iconUrl": "https://i.imgur.com/UmwcsuN.png",
+  "iconSize": [40, 40],
+});
+        
+    
+                marker_76c6640fc5d584a4bd4b6f2bc8da0449.setIcon(icon_bf781f874d6ed6d09c9cd26b91026acc);
+            
+    
+            var marker_a2d25507c42bf8602c5a66040a8f5c54 = L.marker(
+                [37.3891, -5.9845],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+        var icon_75e79aea74f8440a50a3bace83d8ee51 = L.icon({
+  "iconUrl": "https://i.imgur.com/FOEAAxM.png",
+  "iconSize": [40, 40],
+});
+        
+    
+                marker_a2d25507c42bf8602c5a66040a8f5c54.setIcon(icon_75e79aea74f8440a50a3bace83d8ee51);
+            
+    
+            var marker_d69345cd46dd9c8e7fad53d6a74aead3 = L.marker(
+                [36.7213, -4.4214],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+        var icon_0a4b15b8829257f2edd4c7b3ca02e504 = L.icon({
+  "iconUrl": "https://i.imgur.com/CwRwvpS.png",
+  "iconSize": [40, 40],
+});
+        
+    
+                marker_d69345cd46dd9c8e7fad53d6a74aead3.setIcon(icon_0a4b15b8829257f2edd4c7b3ca02e504);
+            
+    
+            var marker_13a94407aab9b0a78696e0c195feeea1 = L.marker(
+                [60.1282, 18.6435],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+                marker_13a94407aab9b0a78696e0c195feeea1.setIcon(icon_faf284ab9097f01fdabc0df20258746e);
+            
+    
+            var marker_273e719dda8931df555dc914c872b309 = L.marker(
+                [49.6116, 6.1319],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+                marker_273e719dda8931df555dc914c872b309.setIcon(icon_13179cf79e2712c1f8f0c2a26740f107);
+            
+    
+            var marker_07d5c1bf88759c19383e72b209788268 = L.marker(
+                [41.9028, 12.4964],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+                marker_07d5c1bf88759c19383e72b209788268.setIcon(icon_f7dfbd4fe8bf7a73850af50a67435bad);
+            
+    
+            var marker_eb138b211110bf198267b05ba5bbcab7 = L.marker(
+                [52.3676, 4.9041],
+                {
+}
+            ).addTo(map_0b26b39ff7096e4c5d1c4849c6f9cb50);
+        
+    
+                marker_eb138b211110bf198267b05ba5bbcab7.setIcon(icon_4618a25245be43a8c70b86634277ea69);
+            
+</script>
+</html>
